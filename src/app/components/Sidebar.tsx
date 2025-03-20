@@ -5,13 +5,13 @@ import { SidebarMenuItem } from './SidebarMenuItem'
 const menuItems = [
     {
         path: '/dashboard/main',
-        icon: <IoBrowsersOutline />,
+        icon: <IoBrowsersOutline size={20}/>,
         title: 'Dashboard',
         subTitle: 'Visualizacion'
     },
     {
         path: '/dashboard/counter',
-        icon: <IoCalculator />,
+        icon: <IoCalculator size={20} />,
         title: 'Counter',
         subTitle: 'Contador Client Side'
     },
