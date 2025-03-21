@@ -1,4 +1,4 @@
-import { SimplePokemon, PokemonResponse, PokemonGrid } from "@/app/pokemons";
+import { SimplePokemon, PokemonResponse, PokemonGrid } from "@/pokemons";
 import Image from "next/image";
 
 const getPokemon = async (limit = 20, offset = 0):Promise<SimplePokemon[]> => {
@@ -13,8 +13,8 @@ const getPokemon = async (limit = 20, offset = 0):Promise<SimplePokemon[]> => {
         }
     })
 
-    throw new Error('Error al obtener los pokemons');
-    
+    // throw new Error('Error al obtener los pokemons');
+
     return pokemons;
 }
 
