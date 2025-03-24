@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { JSX, useEffect, useState } from "react";
+import { JSX } from "react";
 
 interface Props {
     path: string;
@@ -11,7 +11,7 @@ interface Props {
     title: string;
     subTitle: string;
 }
-export const SidebarMenuItem = ({path, icon, title, subTitle}: Props) => {
+export const SidebarMenuItem = ({path, icon}: Props) => {
 
   const currentPath = usePathname();
 

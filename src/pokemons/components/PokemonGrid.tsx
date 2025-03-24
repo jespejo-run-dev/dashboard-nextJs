@@ -1,5 +1,4 @@
 import { SimplePokemon } from "../interfaces/simple-pokemon";
-import Image from "next/image";
 import { PokemonCard } from "./PokemonCard";
 
 interface Props {
