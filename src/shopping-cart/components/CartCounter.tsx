@@ -1,7 +1,8 @@
 'use client'
 
 import { useAppDispatch, useAppSelector } from "@/store";
-import { addOne, substractOne } from "@/store/counter/counterSlice";
+import { addOne, initCounterState, substractOne } from "@/store/counter/counterSlice";
+import { useEffect } from "react";
 
 interface Pops {
     value: number
@@ -9,10 +10,12 @@ interface Pops {
 
 export const CartCounter = ({value = 0}: Pops) => {
 
-    // const [counter, setCounter] = useState(value);
-
     const count = useAppSelector(state => state.counter.count);
     const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(initCounterState(value))
+    }, [dispatch, value])
 
   return (
     <>
